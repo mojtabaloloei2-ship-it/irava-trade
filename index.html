@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071d35">
+<title>IRAVA TRADE | تجارت جهانی</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial;background:#f3f6fa;color:#17283d}
+header{background:#071d35;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:25px;font-weight:bold;color:#e8b64d}
+.logo span{color:white}
+nav a{color:white;text-decoration:none;margin:8px;font-size:13px}
+.hero{background:linear-gradient(120deg,#071d35,#124b65);color:white;text-align:center;padding:65px 20px}
+.hero h1{font-size:32px;margin:0 0 18px}
+.hero p{line-height:2;color:#d9e7ef}
+.btn{display:inline-block;background:#e8b64d;color:#10253a;padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:12px 5px;border:0;cursor:pointer}
+.btn2{background:transparent;border:1px solid white;color:white}
+.container{max-width:1100px;margin:auto;padding:35px 18px}
+.section-title{text-align:center;font-size:24px;color:#0a3150;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;border-radius:13px;padding:23px;box-shadow:0 4px 18px #102b4010}
+.card h3{color:#0a4661}
+.card p{line-height:1.9;color:#637386;font-size:14px}
+.icon{font-size:34px}
+input,select,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #d6dfe8;border-radius:8px;font-family:inherit;background:white}
+footer{background:#071d35;color:#dbe6ee;text-align:center;padding:30px;line-height:2}
+.small{font-size:12px;color:#9eafbf}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">IRAVA <span>TRADE</span></div>
+<nav>
+<a href="#home">خانه</a>
+<a href="#products">محصولات</a>
+<a href="#services">خدمات</a>
+<a href="#contact">تماس با ما</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>دروازه تجارت ایران به بازارهای جهانی</h1>
+<p>پلتفرمی برای معرفی محصولات صادراتی، ارتباط با خریداران خارجی و توسعه تجارت بین‌المللی</p>
+<a href="#products" class="btn">مشاهده محصولات</a>
+<a href="#contact" class="btn btn2">درخواست همکاری</a>
+</section>
+
+<main class="container">
+<section id="products">
+<h2 class="section-title">دسته‌بندی محصولات صادراتی</h2>
+<div class="grid">
+<div class="card"><div class="icon">🥜</div><h3>خشکبار و آجیل</h3><p>پسته، خرما، کشمش، زعفران و محصولات کشاورزی.</p></div>
+<div class="card"><div class="icon">🏗️</div><h3>مصالح ساختمانی</h3><p>سنگ ساختمانی، کاشی، سرامیک و محصولات معدنی.</p></div>
+<div class="card"><div class="icon">🛢️</div><h3>محصولات پتروشیمی</h3><p>معرفی محصولات صنعتی و مواد اولیه.</p></div>
+<div class="card"><div class="icon">🍎</div><h3>محصولات کشاورزی</h3><p>میوه، سبزیجات و محصولات فرآوری‌شده.</p></div>
+<div class="card"><div class="icon">🧶</div><h3>صنایع دستی</h3><p>فرش، صنایع دستی و محصولات هنری ایران.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>محصولات صنعتی</h3><p>قطعات، تجهیزات و کالاهای تولیدی.</p></div>
+</div>
+</section>
+
+<section id="services" style="margin-top:55px">
+<h2 class="section-title">خدمات IRAVA TRADE</h2>
+<div class="grid">
+<div class="card"><h3>🌍 بازارهای جهانی</h3><p>معرفی فرصت‌های صادراتی و بازارهای هدف.</p></div>
+<div class="card"><h3>🤝 ارتباط تجاری</h3><p>ایجاد مسیر ارتباط میان تولیدکنندگان و خریداران.</p></div>
+<div class="card"><h3>📦 معرفی تأمین‌کنندگان</h3><p>معرفی ظرفیت تولید و عرضه کالاهای ایرانی.</p></div>
+<div class="card"><h3>📊 تحلیل بازار</h3><p>ارائه اطلاعات و بررسی فرصت‌های تجارت.</p></div>
+</div>
+</section>
+
+<section id="contact" style="margin-top:55px">
+<h2 class="section-title">درخواست همکاری تجاری</h2>
+<div class="card">
+<p>اطلاعات خود را وارد کنید تا درخواست همکاری شما آماده شود.</p>
+<form id="contactForm">
+<input id="name" placeholder="نام و نام شرکت" required>
+<input id="email" type="email" placeholder="ایمیل">
+<input id="country" placeholder="کشور مقصد">
+<select id="type">
+<option>صادرکننده</option>
+<option>خریدار خارجی</option>
+<option>تولیدکننده</option>
+<option>نماینده تجاری</option>
+</select>
+<textarea id="message" rows="4" placeholder="شرح درخواست همکاری"></textarea>
+<button class="btn" type="submit">ثبت و آماده‌سازی درخواست</button>
+</form>
+<p id="result"></p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="logo">IRAVA TRADE</div>
+<p>پل ارتباطی تجارت ایران با جهان</p>
+<p class="small">نسخه اولیه پلتفرم | اطلاعات و درخواست‌ها فعلاً در مرورگر آماده می‌شوند.</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();
+const data='درخواست همکاری IRAVA TRADE\nنام: '+name.value+'\nایمیل: '+email.value+'\nکشور: '+country.value+'\nنوع همکاری: '+type.value+'\nتوضیحات: '+message.value;
+const a=document.createElement('a');
+a.href='mailto:?subject='+encodeURIComponent('درخواست همکاری IRAVA TRADE')+'&body='+encodeURIComponent(data);
+a.click();
+document.getElementById('result').textContent='درخواست آماده شد. برای ارسال، برنامه ایمیل را تأیید کنید.';
+});
+</script>
+</body>
+</html>
